@@ -19,7 +19,7 @@ class GeneticDrawing:
         #start with an empty black img
         self.imgBuffer = [np.zeros((self.img_grey.shape[0], self.img_grey.shape[1]), np.uint8)]
         
-    def generate(self, stages=10, generations=100, brushstrokesCount=10, show_progress_imgs=True):
+    def generate(self, stages=10, generations=100, brushstrokesCount=10, show_progress_imgs=False):
         for s in range(stages):
             #initialize new DNA
             if self.sampling_mask is not None:
